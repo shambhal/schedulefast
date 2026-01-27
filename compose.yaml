@@ -1,0 +1,20 @@
+
+services:
+ fastapi:
+  
+    build:
+      context: .
+    container_name: fastapi  
+    ports:
+      - 8080:8080
+
+
+    networks:
+      - shared_net
+       
+    env_file:
+    - .env
+
+networks:
+  shared_net:
+    external: true
