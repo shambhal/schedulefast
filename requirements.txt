@@ -6,3 +6,6 @@ pymysql
 python-jose
 cryptography
 python-dotenv
+#ifcpanel
+#asgiref
+pydantic-settings

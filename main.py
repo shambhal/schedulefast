@@ -6,7 +6,7 @@ from core.database import engine
 from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 from db import events
-allowed_hosts = ["http://localhost:3000",'http://localhost', "*.example.com",'http://localhost/op33/']
+allowed_hosts = ["http://localhost:3000",'http://localhost', "*.example.com",'http://localhost/op33/'2]
 
 app.add_middleware(
     CORSMiddleware,
