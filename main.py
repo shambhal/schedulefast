@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from api import cats,doctors,utils,cart,checkout,user,pms,orders,information,banners,config
 from chat.routes import chat_router
 from core.database import engine
+import os
 #from starlette.middleware.sessions import SessionMiddleware
 from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
