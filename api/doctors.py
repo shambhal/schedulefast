@@ -110,7 +110,7 @@ def doctorq(id:int,dat:Optional[str]=None,db:Session=Depends(get_db)):
         return {'info':d}
 
 
-@router.get("schedule/{id}")      
+@router.get("/schedule/{id}")      
 def schedule(id:int,dat:Optional[str]=None,db:Session=Depends(get_db)):
 
        if(dat==None ):
