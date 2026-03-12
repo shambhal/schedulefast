@@ -9,7 +9,7 @@ app = FastAPI()
 from db import events
 from core.settings import settings
 
-raw_hosts = os.getenv("ALLOWED_HOSTS", "")
+raw_hosts = os.getenv("ALLOWED_HOSTS", "*")
 allowed_hosts = [h.strip() for h in raw_hosts.split(",") if h.strip()]
 
 app.add_middleware(
