@@ -34,6 +34,11 @@ app.include_router(orders.router, prefix="/orders", )
 app.include_router(banners.router, prefix="/banner", )
 app.include_router(information.router, prefix="/information", )
 app.include_router(config.router, prefix="/config", )
+
+
+@app.get("/")
+def root():
+    return {"status": "running"}
 '''
 app2.include_router(products.router, prefix="/products", tags=["products"])
 app2.include_router(cart.router, prefix="/cart", tags=["cart"])
